@@ -1,0 +1,90 @@
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #212121;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #212121, #000);
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ff0000;
+    margin-right: 20px;
+}
+
+.typewriter {
+    font-size: 24px;
+}
+
+#skills {
+    font-size: 18px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.typewriter h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+    
+    .profile-picture {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 80vh;
+    }
+    
+    .typewriter h1 {
+        font-size: 36px;
+    }
+    
+    #skills {
+        font-size: 14px;
+    }
+}
