@@ -8,26 +8,42 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #212121;
     padding: 1em;
-    text-align: center;
 }
 
-nav ul {
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
 }
 
-nav li {
+.nav-links li {
     margin-right: 20px;
 }
 
-nav a {
+.nav-links a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+    background-color: #333;
+    border: 2px solid #ff0000;
 }
 
 .hero {
@@ -39,28 +55,51 @@ nav a {
 }
 
 .profile-picture {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 2px solid #ff0000;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .typewriter {
-    font-size: 24px;
+    font-size: 36px;
 }
 
 #skills {
-    font-size: 18px;
+    font-size: 24px;
     color: #ff0000;
     font-weight: bold;
 }
 
-.typewriter h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+.description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.social-links a:hover {
     color: #ff0000;
-    text-shadow: 0 0 10px #ff0000;
+    background-color: #333;
+    border: 2px solid #ff0000;
+}
+
+.social-links i {
+    margin-right: 10px;
 }
 
 /* Responsive Design */
@@ -80,11 +119,11 @@ nav a {
         height: 80vh;
     }
     
-    .typewriter h1 {
-        font-size: 36px;
+    .typewriter {
+        font-size: 24px;
     }
     
     #skills {
-        font-size: 14px;
+        font-size: 18px;
     }
 }
