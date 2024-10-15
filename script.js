@@ -12,7 +12,7 @@ function typeSkill() {
         if (i < skills.length) {
             if (j < skills[i].length) {
                 currentSkill += skills[i][j];
-                skillsElement.textContent = "I'm a " + currentSkill;
+                skillsElement.textContent = "I'm a expert in " + currentSkill;
                 j++;
             } else {
                 typing = false;
