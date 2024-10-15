@@ -1,5 +1,5 @@
 
-const skills = ["Web Development", "HTML", "CSS", "Graphics Design", "JavaScript", "Website Inspection"];
+const skills = ["Web Developer", "HTML", "CSS", "Graphics Designer", "JavaScript", "Website Inspector"];
 let i = 0;
 let j = 0;
 let currentSkill = "";
@@ -12,7 +12,7 @@ function typeSkill() {
         if (i < skills.length) {
             if (j < skills[i].length) {
                 currentSkill += skills[i][j];
-                skillsElement.textContent = currentSkill;
+                skillsElement.textContent = "I'm a " + currentSkill;
                 j++;
             } else {
                 typing = false;
@@ -30,7 +30,7 @@ function typeSkill() {
     } else {
         if (j > 0) {
             currentSkill = currentSkill.slice(0, -1);
-            skillsElement.textContent = currentSkill;
+            skillsElement.textContent = "I'm a " + currentSkill;
             j--;
         } else {
             typing = true;
