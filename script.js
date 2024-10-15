@@ -1,5 +1,5 @@
 
-const skills = ["Web Developer", "HTML", "CSS", "Graphics Designer", "JavaScript", "Website Inspector"];
+const skills = ["Web Developing", "HTML", "CSS", "Graphics Designing", "JavaScript", "Website Inspecting"];
 let i = 0;
 let j = 0;
 let currentSkill = "";
