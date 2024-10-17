@@ -1,41 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dwip - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Nigga FPS</title>
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Dwip</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="background">
+        <img src="your-game-background.jpg" alt="Game Background" id="bgImage">
+    </div>
 
-    <section id="home">
-        <div class="hero">
-            <img src="profile.png.jpg" alt="Dwip's Profile Picture" class="profile-picture">
-            <div class="typewriter">
-                <h1>I'm Dwip</h1>
-                <p id="skills"></p>
-                <p class="description">Highly motivated web developer with expertise in HTML, CSS, JavaScript, and graphics design.</p>
-                <div class="social-links">
-                    <a href="(link unavailable)" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="mailto:yourgmail@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Gmail</a>
-                </div>
-            </div>
+    <div id="menu">
+        <h1>FPS Game</h1>
+        
+        <!-- Game Mode Slider -->
+        <div class="slider-container">
+            <label for="gameModeSlider">Game Mode: <span id="gameModeLabel">Easy</span></label>
+            <input type="range" id="gameModeSlider" min="1" max="3" step="1" value="1">
         </div>
-    </section>
-    
-    <script src="script.js"></script>
+
+        <!-- Background Music Slider -->
+        <div class="slider-container">
+            <label for="musicVolumeSlider">Background Music Volume: <span id="musicVolumeLabel">50%</span></label>
+            <input type="range" id="musicVolumeSlider" min="0" max="100" value="50">
+        </div>
+
+        <!-- Buttons for the main menu -->
+        <button id="startGame">Start Game</button>
+        <button id="settings">Settings</button>
+        <button id="credits">Credits</button>
+        <button id="exitGame">Exit</button>
+    </div>
+
+    <script src="menu.js"></script>
 </body>
-</html>
+            </html>
+            
